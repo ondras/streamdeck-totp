@@ -1,0 +1,46 @@
+{
+	"Name": "TOTP",
+	"Version": "0.1.0.0",
+	"Author": "ondras",
+	"Actions": [
+		{
+			"Name": "Generate TOTP",
+			"UUID": "com.ondras.totp.generate",
+			"Icon": "imgs/actions/generate/icon",
+			"Tooltip": "Generates a TOTP value.",
+			"PropertyInspectorPath": "ui/generate-totp.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/generate/key"
+				}
+			]
+		}
+	],
+	"Category": "TOTP",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Time-based One Touch Password",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 3,
+	"Software": {
+		"MinimumVersion": "6.9"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "12"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "com.ondras.totp"
+}
